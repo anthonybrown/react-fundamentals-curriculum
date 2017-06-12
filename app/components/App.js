@@ -1,5 +1,5 @@
 import React from 'react'
-import ZipCode from './Zipcode'
+import ZipCode from './ZipCode'
 
 class App extends React.Component {
   render () {
@@ -8,12 +8,15 @@ class App extends React.Component {
         <div>
           <h1>Main Header</h1>
         </div>
-        <div className='home-container'>
+        <div
+          className='home-container'
+          style={{backgroundImage: 'url("app/images/pattern.svg")'}}
+        >
           <h1 className='header'>Enter a City and State</h1>
           <ZipCode
             direction='column'
-            onSubmitZipcode={ function () {} }
-            onUpdateZipcode={ function () {} }
+            onSubmitZipcode={() => {}}
+            onUpdateZipcode={() => {}}
             zipcode={12345}
           />
         </div>
